@@ -1,6 +1,6 @@
 ### JavaScript 5 Primitive Datatypes
 ---
-####五大型態
+#### 五大型態
 * Numbers
 無論正數、負數、分數、小數都是屬於numbers，javascript不分
 * String
