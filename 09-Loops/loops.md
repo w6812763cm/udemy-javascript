@@ -1,6 +1,6 @@
-###Loops
+### Loops
 
-####Dry Code : Don't repeat yourself
+#### Dry Code : Don't repeat yourself
 
 ##### While Loops : Repeat code WHILE a condition is true
 
