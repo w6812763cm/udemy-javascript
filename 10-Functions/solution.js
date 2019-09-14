@@ -34,7 +34,7 @@ function factorial(n){
 
 function kebabToSnake(str){
     if (str.search(/[-]/g) !== -1){
-        newStr = str.replace(/-/gi, "_");git
+        newStr = str.replace(/-/gi, "_");
         return newStr;
     }
     else if (str.search(/[_]/g) !== -1){
