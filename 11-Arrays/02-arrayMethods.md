@@ -50,10 +50,11 @@ var nums = [4, 8, 17, 22, 33];
 // 提取 17.22
 var newNums = nums.slice(2,4); 
 //2 is start index and  4 is end index but not inclusive 
-
 // newNums is [17 ,22];
 // nums is [4, 8, 17, 22, 33];
 
-//亦可使用slice來copy整個陣列;
+//亦可使用slice來copy整個陣列ㄕㄛ
 newNums = nums.slice();
 newNums // [4, 8, 17, 22, 33]; 
+
+```
