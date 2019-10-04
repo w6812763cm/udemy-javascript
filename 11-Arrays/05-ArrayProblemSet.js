@@ -9,42 +9,62 @@ console.log(arr);
 printReverse(arr);
 
 function printReverse(newArray){
-   for(var i = newArray.length; i >=0 ; i--){
+   for(var i = newArray.length -1; i >=0 ; i--){
       console.log(newArray[i]);
    }   
 }
-// // print every element in reverse
-// for(var i = arr.length; i >=0 ; i--){
-//    console.log( arr[i]);
-// }
 
 }, 500);
 
 
 function isUniform(newArr){
+   var compare1 = newArr[0];
    for (var i = 1 ; i < newArr.length ; i++){
        //  compare first element and second , if true go ahead , false then return false
-       var compare1 = newArr[0];
-       var compare2 = newArr[i];
-       if (compare1 !== compare2){
-          console.log("false");
-          break;
-       } else if (i === newArr.length -1) {
-          console.log("true");
-       }
+       if (newArr[i] !== compare1){
+         return false; //等同於結束;
+       } 
    }
+   return true;
 }
 
 isUniform([1,1,1,1]); // true
 isUniform([1,2,1,1]); // false
 
 
-function sum(array){
+//sum of all the element in the array
+function sumArray(array){
    var total = 0;
-   for (var i = 0 ; i < length ; i++){
+   for (var i = 0 ; i < array.length ; i++){
       total += array[i]; 
    }
-   console.log(total);
+   return total;
 }
 
-sum([1,2,3,4]);
+//and can use forEach
+function sumArray(array){
+   var total = 0;
+   array.forEach(function(element){
+      total += element;
+   });
+   return total;
+
+}
+
+sumArray([1,2,3,4]); //10
+sumArray([-5,100]) //95
+
+
+
+// return maximum in the array
+function max(array){
+   var maxNum = array[0];
+   for(var i = 1; i < array.length; i++){
+      if (array[i] > maxNum){
+         maxNum = array[i];
+      }
+   }
+   return maxNum;
+}
+
+max([2,3,4,5]);
