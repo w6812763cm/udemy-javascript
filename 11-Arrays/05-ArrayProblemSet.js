@@ -19,3 +19,21 @@ function printReverse(newArray){
 // }
 
 }, 500);
+
+
+function isUniform(newArr){
+   for (var i = 1 ; i < newArr.length ; i++){
+       //  compare first element and second , if true go ahead , false then return false
+       var compare1 = newArr[0];
+       var compare2 = newArr[i];
+       if (compare1 !== compare2){
+          console.log("false");
+          break;
+       } else if (i === newArr.length -1) {
+          console.log("true");
+       }
+   }
+}
+
+isUniform([1,1,1,1]); // true
+isUniform([1,2,1,1]); // false
