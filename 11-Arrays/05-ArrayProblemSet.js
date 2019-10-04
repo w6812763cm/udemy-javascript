@@ -37,3 +37,14 @@ function isUniform(newArr){
 
 isUniform([1,1,1,1]); // true
 isUniform([1,2,1,1]); // false
+
+
+function sum(array){
+   var total = 0;
+   for (var i = 0 ; i < length ; i++){
+      total += array[i]; 
+   }
+   console.log(total);
+}
+
+sum([1,2,3,4]);
