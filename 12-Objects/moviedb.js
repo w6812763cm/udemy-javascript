@@ -35,6 +35,11 @@ for (var i = 0; i < movie.length; i++){
 // forEach function
 
 movie.forEach(function(movie){
+    console.log(buildString(movie));
+});
+
+//clean code
+function buildString(movie){
     result = " You have"
     if (movie.hasWatched){
         result += " watched "  
@@ -42,8 +47,8 @@ movie.forEach(function(movie){
         result += " not seen "
     }
         result += movie.title + " - " + movie.rating
-    console.log(result);
-});
+    return result;
+}
 
 
 
