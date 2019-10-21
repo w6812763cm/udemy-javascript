@@ -40,3 +40,14 @@ h1.background = "grey";
 var h1 = document.querySelector("h1");
 h1.classList.add("changing"); // add class
 ```
+
+#### ClassList 
+
+##### add
+``` h1 classList.add("another-class");```
+##### remove
+``` h1 classList.remove("another-class");```
+##### toggle - add or remove
+* return true or false 
+``` h1 classList.toggle("another-class");```
+
