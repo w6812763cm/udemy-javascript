@@ -51,3 +51,26 @@ h1.classList.add("changing"); // add class
 * return true or false 
 ``` h1 classList.toggle("another-class");```
 
+#### Manipulating Text and Content
+
+##### textContent - 印出元素內不包含HTML TAG的所有文字
+
+HTML
+```<p>This is a <strong>special</strong> paragraph.</p>```
+
+JS
+```
+var p = document.querySelector("p");
+p.textContent // This is a special paragraph.
+```
+##### innerHTML - 印出元素內包含HTML TAG的所有文字
+
+```
+var p = document.querySelector("p");
+p.innerHTML // This is a <strong>special</strong> paragraph.
+```
+
+##### * 無論是textContent或innerHTML，只要給予p新字串時，原本內容中的HTML TAG都會被取代。
+
+##### * 若指定```document.body.textContent = <h1>Goodbye</h1>``` 則只會顯示```<h1>Goodbye</h1>```
+##### * 若是document.body.innerHTML則會顯示h1樣式的Goodbye
