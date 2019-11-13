@@ -50,21 +50,22 @@ resetButton.addEventListener("click", function(){
     pickedColor = pickColor();
     // Change colorDisplay to match picked color and change h1 bgcolor
     colorDisplay.textContent = pickedColor;
-    h1.style.backgroundColor = "#232323";
+    
     // Change colors of squares
     for(i = 0; i < squares.length; i++){
         squares[i].style.backgroundColor = colors[i];
     }
-    resetButton.textContent = "NEW COLORS"   
+    h1.style.backgroundColor = "steelblue";  
 }); 
+
+colorDisplay.textContent = pickedColor;
 
 for(i = 0; i < squares.length; i++){
     // add initial colors to squares
     squares[i].style.backgroundColor = colors[i];
-    
     // add click listeners to suqares
     squares[i].addEventListener("click", function(){
-    // grab color of clicked square
+        // grab color of clicked square
         var clickedColor = this.style.backgroundColor;
         // compare color to pickedColor 
         if (clickedColor === pickedColor){
