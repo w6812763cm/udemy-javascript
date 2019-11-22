@@ -8,8 +8,8 @@
 * 可將要指定的style放入一個物件內
 ```
 var styles = {
-    backgroundColor : pink,  // use CamelCase(backgroundColor) 
-    fontWeight: bold        
+    backgroundColor : "pink",  // use CamelCase(backgroundColor) 
+    fontWeight: "bold"        
     };
 
 $("#special").css(styles);
