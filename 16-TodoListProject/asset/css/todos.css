@@ -23,7 +23,7 @@ span {
     color: white;
     width: 0px;
     display: inline-block;
-    transition:2.2s linear; 
+    transition:0.2s linear; 
     opacity:0;
 }
 
